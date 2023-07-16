@@ -24,8 +24,9 @@ $accent-dark:var(--accent-dark);
 $accent-transparency:var(--accent-transparency);
 
 $light:var(--light);
+$light-transparency:var(--light-transparency);
 $dark:var(--dark);
-
+$dark-transparency:var(--dark-transparency);
 $branco:var(--branco);
 $branco-transparency:var(--branco-transparency);
 
@@ -74,7 +75,7 @@ body{
   background: $primary;
   color: $primary-dark;
   min-height: 100vh;
-  background-image: url(../images/bg-aramados.jpg);
+  background-image: url(../images/bg-aramados.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -353,7 +354,9 @@ body{
     background-color: $accent-dark!important;
   } 
 }
-
+#marinaflor{
+  height: 60px;
+}
 #end{
   //position: relative;
   height: 85px;
@@ -367,6 +370,8 @@ footer{
   .small{
     font-size: .7rem;
   }
+
+  
   a{
     text-decoration: none;
     color: $primary-dark;

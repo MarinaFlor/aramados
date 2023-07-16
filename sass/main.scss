@@ -26,8 +26,9 @@
   --accent-transparency:#bbff8080;
   
   --light:#f9eaf9;
+  --light-transparency:#f9eaf980;
   --dark:#0e0e0e;
-
+  --dark-transparency:#0e0e0e80;
   --branco:#fff;
   --branco-transparency:#ffffff80;
 
@@ -58,8 +59,9 @@
   $accent-transparency:var(--accent-transparency);
   
   $light:var(--light);
+  $light-transparency:var(--light-transparency);
   $dark:var(--dark);
- 
+  $dark-transparency:var(--dark-transparency);
   $branco:var(--branco);
   $branco-transparency:var(--branco-transparency);
   
@@ -94,7 +96,7 @@ body {
 }
 
 /* COR DAS FONTES */
-.c-{
+.c{
   
   &-primary{
     color:$primary!important;

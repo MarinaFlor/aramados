@@ -36,7 +36,7 @@ body {
   background: var(--primary);
   color: var(--primary-dark);
   min-height: 100vh;
-  background-image: url(../images/bg-aramados.jpg);
+  background-image: url(../images/bg-aramados.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -259,6 +259,10 @@ body {
 }
 #contato .form-check-input:checked {
   background-color: var(--accent-dark) !important;
+}
+
+#marinaflor {
+  height: 60px;
 }
 
 #end {
