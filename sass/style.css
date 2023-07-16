@@ -33,12 +33,13 @@ GERAIS
 */
 body {
   position: relative;
-  background: var(--primary-light);
-  color: var(--primary);
+  background: var(--primary);
+  color: var(--primary-dark);
   min-height: 100vh;
   background-image: url(../images/bg-aramados.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* BOTÕES */
@@ -49,14 +50,14 @@ body {
   transition: 0.5s all ease-in-out;
 }
 .btn-primary:hover {
-  background-color: var(--primary);
-  border-color: var(--primary);
-  color: var(--branco);
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+  color: var(--primary-dark);
 }
 .btn-primary:active {
   background-color: var(--primary-light) !important;
-  border-color: var(--primary-light) !important;
-  color: var(--branco);
+  border-color: var(--primary-light);
+  color: var(--primary-dark) !important;
 }
 .btn-primary:focus-visible {
   outline: var(--light) auto 1px;
@@ -214,16 +215,29 @@ body {
   box-shadow: 0 0 0 0.2rem var(--branco) !important;
 }
 .btn-click {
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 3px 0 var(--secondary) !important;
   transition: all 0.3s ease-in-out;
 }
 .btn-click:hover {
-  transform: translateX(2px) translateY(2px);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transform: translateX(-2px) translateY(2px);
+  box-shadow: -1px 1px 0 var(--secondary) !important;
 }
 .btn-click:active {
-  transform: translateX(4px) translateY(4px);
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  transform: translateX(-4px) translateY(4px);
+  box-shadow: 0px 0px 0 var(--secondary) !important;
+}
+.btn-aramado {
+  border: 1px solid var(--secondary-dark) !important;
+  box-shadow: -3px 3px 0 var(--secondary) !important;
+  transition: all 0.3s ease-in-out;
+}
+.btn-aramado:hover {
+  transform: translateX(-2px) translateY(2px);
+  box-shadow: -1px 1px 0 var(--secondary) !important;
+}
+.btn-aramado:active, .btn-aramado:focus, .btn-aramado:focus-visible {
+  transform: translateX(-4px) translateY(4px);
+  box-shadow: 0px 0px 0 var(--secondary) !important;
 }
 
 .navbar .nav-text {
@@ -232,7 +246,19 @@ body {
 }
 
 #contato .logo {
-  max-width: 300px;
+  min-width: 300px;
+  max-width: 500px;
+  width: 80%;
+}
+#contato .form-control {
+  background-color: var(--branco-transparency);
+}
+#contato .form-control:hover, #contato .form-control:focus, #contato .form-control:focus-visible {
+  background-color: var(--accent-transparency);
+  outline: 0 !important;
+}
+#contato .form-check-input:checked {
+  background-color: var(--accent-dark) !important;
 }
 
 #end {
@@ -251,7 +277,7 @@ footer .small {
 }
 footer a {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--primary-dark);
   position: relative;
 }
 footer a:hover span {
@@ -279,7 +305,7 @@ footer a span.believe {
 }
 footer a svg {
   height: 30px;
-  fill: var(--primary);
+  fill: var(--primary-dark);
   filter: drop-shadow(0 0 0.1rem var(--primary-transparency));
 }
 footer a svg:hover {

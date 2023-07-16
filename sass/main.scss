@@ -2,21 +2,31 @@
 :root{
 
   --primary-light:#ffb9eb;
-  --primary:#af478e;
-  --primary-dark:#8b2b6d;
+  --primary:#ddacc2;
+  --primary-dark:#af478e;
 
-  --primary-transparency:#F47D3580;
+  --primary-transparency:#af478e80;
 
-  --secondary-light:#808080;
-  --secondary:#404040;
-  --secondary-dark:#2e2e2e;
+  --secondary-light:#333333;
+  --secondary:#232323;
+  --secondary-dark:#1a1a1a;
 
-  --secondary-transparency:#2e2e2e80;
+  --secondary-transparency:#23232380;
 
-  --accent:#FFAA29;
+  --tertiary-light:#f4d4bf;
+  --tertiary:#fbb03b;
+  --tertiary-dark:#ed9564;
+
+  --tertiary-transparency:#fbb03b80;
+
+  --accent-light:#ddffbd;
+  --accent:#bbff80;
+  --accent-dark:#80a85a;
+
+  --accent-transparency:#bbff8080;
   
-  --light:#D2D2D2;
-  --dark:#161616;
+  --light:#f9eaf9;
+  --dark:#0e0e0e;
 
   --branco:#fff;
   --branco-transparency:#ffffff80;
@@ -35,7 +45,17 @@
 
   $secondary-transparency:var(--secondary-transparency);
 
+  $tertiary-light:var(--tertiary-light);
+  $tertiary:var(--tertiary);
+  $tertiary-dark:var(--tertiary-dark);
+
+  $tertiary-transparency:var(--tertiary-transparency);
+
+  $accent-light:var(--accent-light);
   $accent:var(--accent);
+  $accent-dark:var(--accent-dark);
+
+  $accent-transparency:var(--accent-transparency);
   
   $light:var(--light);
   $dark:var(--dark);
