@@ -38,7 +38,6 @@ html {
 
 body {
   width: 100vw;
-  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   font-family: "Lufga", sans-serif;
 }
@@ -176,7 +175,7 @@ body {
 }
 
 /* ALINHAMENTO */
-.center-all {
+.center-s {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,4 +187,54 @@ body {
 .center-h {
   display: flex;
   justify-content: center;
+}
+
+/* FILL */
+.fill-primary {
+  fill: var(--primary) !important;
+}
+.fill-primary-light {
+  fill: var(--primary-light) !important;
+}
+.fill-primary-dark {
+  fill: var(--primary-dark) !important;
+}
+.fill-primary-transparency {
+  fill: var(--primary-transparency) !important;
+}
+.fill-secondary {
+  fill: var(--secondary) !important;
+}
+.fill-secondary-light {
+  fill: var(--secondary-light) !important;
+}
+.fill-secondary-dark {
+  fill: var(--secondary-dark) !important;
+}
+.fill-secondary-transparency {
+  fill: var(--secondary-transparency) !important;
+}
+.fill-tertiary {
+  fill: var(--tertiary) !important;
+}
+.fill-tertiary-light {
+  fill: var(--tertiary-light) !important;
+}
+.fill-tertiary-dark {
+  fill: var(--tertiary-dark) !important;
+}
+.fill-tertiary-transparency {
+  fill: var(--tertiary-transparency) !important;
+}
+.fill-accent {
+  fill: var(--accent) !important;
+}
+.fill-accent-light {
+  fill: var(--accent-light) !important;
+}
+.fill-accent-dark {
+  fill: var(--accent-dark) !important;
+}
+.fill-accent-transparency {
+  fill: var(--accent-transparency) !important;
 }/*# sourceMappingURL=main.css.map */

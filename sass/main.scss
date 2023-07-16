@@ -83,7 +83,6 @@ html{
 
 body {
   width: 100vw;
-  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   font-family: 'Lufga', sans-serif;
 
@@ -97,112 +96,270 @@ body {
 /* COR DAS FONTES */
 .c-{
   
-  &primary{
+  &-primary{
     color:$primary!important;
+    &-light{
+      color:$primary-light!important;
+    }
+    &-dark{
+      color:$primary-dark!important;
+    }
+    &-transparency{
+      color:$primary-transparency!important;
+    }
   }
-  &secondary{
+
+  &-secondary{
     color:$secondary!important;
+    &-light{
+      color:$secondary-light!important;
+    }
+    &-dark{
+      color:$secondary-dark!important;
+    }
+    &-transparency{
+      color:$secondary-transparency!important;
+    }
   }
-  &accent{
+
+  &-tertiary{
+    color:$tertiary!important;
+    &-light{
+      color:$tertiary-light!important;
+    }
+    &-dark{
+      color:$tertiary-dark!important;
+    }
+    &-transparency{
+      color:$tertiary-transparency!important;
+    }
+  }
+
+  &-accent{
     color:$accent!important;
+    &-light{
+      color:$accent-light!important;
+    }
+    &-dark{
+      color:$accent-dark!important;
+    }
+    &-transparency{
+      color:$accent-transparency!important;
+    }
   }
-  &light{
+
+  &-light{
     color:$light!important;
+    &-transparency{
+      color:$light-transparency!important;
+    }
   }
-  &dark{
+  &-dark{
     color:$dark!important;
+    &-transparency{
+      color:$dark-transparency!important;
+    }
   }
-  &branco{
+  &-branco{
     color:$branco!important;
+    &-transparency{
+      color:$branco-transparency!important;
+    }
   }
   
 }
 
 /* COR DOS FUNDOS */
-.b-{
+.bg{
 
-  &primary{
+  &-primary{
     background-color:$primary!important;
+    &-light{
+      background-color:$primary-light!important;
+    }
+    &-dark{
+      background-color:$primary-dark!important;
+    }
+    &-transparency{
+      background-color:$primary-transparency!important;
+    }
   }
-  &secondary{
+
+  &-secondary{
     background-color:$secondary!important;
+    &-light{
+      background-color:$secondary-light!important;
+    }
+    &-dark{
+      background-color:$secondary-dark!important;
+    }
+    &-transparency{
+      background-color:$secondary-transparency!important;
+    }
   }
-  &accent{
+
+  &-tertiary{
+    background-color:$tertiary!important;
+    &-light{
+      background-color:$tertiary-light!important;
+    }
+    &-dark{
+      background-color:$tertiary-dark!important;
+    }
+    &-transparency{
+      background-color:$tertiary-transparency!important;
+    }
+  }
+
+  &-accent{
     background-color:$accent!important;
+    &-light{
+      background-color:$accent-light!important;
+    }
+    &-dark{
+      background-color:$accent-dark!important;
+    }
+    &-transparency{
+      background-color:$accent-transparency!important;
+    }
   }
-  &light{
+
+  &-light{
     background-color:$light!important;
+    &-transparency{
+      background-color:$light-transparency!important;
+    }
   }
-  &dark{
+  &-dark{
     background-color:$dark!important;
+    &-transparency{
+      background-color:$dark-transparency!important;
+    }
   }
-  &branco{
+  &-branco{
     background-color:$branco!important;
+    &-transparency{
+      background-color:$branco-transparency!important;
+    }
   }
   
 }
 
 /* COR DA BORDA */
 /* PESO DA BORDA */
-.border-{
-  &primary{
+.border{
+  &-primary{
     border-color:$primary!important;
+    &-light{
+      border-color:$primary-light!important;
+    }
+    &-dark{
+      border-color:$primary-dark!important;
+    }
+    &-transparency{
+      border-color:$primary-transparency!important;
+    }
   }
-  &secondary{
+
+  &-secondary{
     border-color:$secondary!important;
+    &-light{
+      border-color:$secondary-light!important;
+    }
+    &-dark{
+      border-color:$secondary-dark!important;
+    }
+    &-transparency{
+      border-color:$secondary-transparency!important;
+    }
   }
-  &accent{
+
+  &-tertiary{
+    border-color:$tertiary!important;
+    &-light{
+      border-color:$tertiary-light!important;
+    }
+    &-dark{
+      border-color:$tertiary-dark!important;
+    }
+    &-transparency{
+      border-color:$tertiary-transparency!important;
+    }
+  }
+
+  &-accent{
     border-color:$accent!important;
+    &-light{
+      border-color:$accent-light!important;
+    }
+    &-dark{
+      border-color:$accent-dark!important;
+    }
+    &-transparency{
+      border-color:$accent-transparency!important;
+    }
   }
-  &light{
+
+  &-light{
     border-color:$light!important;
+    &-transparency{
+      border-color:$light-transparency!important;
+    }
   }
-  &dark{
+  &-dark{
     border-color:$dark!important;
+    &-transparency{
+      border-color:$dark-transparency!important;
+    }
   }
-  &branco{
+  &-branco{
     border-color:$branco!important;
+    &-transparency{
+      border-color:$branco-transparency!important;
+    }
   }
   
   
-  &1{
+  &-1{
     border-style:solid; 
     border-width: 1px;
   }
-  &2{
+  &-2{
     border-style:solid; 
     border-width: 2px;
   }
-  &3{
+  &-3{
     border-style:solid; 
     border-width: 3px;
   }
-  &4{
+  &-4{
     border-style:solid; 
     border-width: 4px;
   }
-  &5{
+  &-5{
     border-style:solid; 
     border-width: 5px;
   }
 
-  &radius-05{
+  &-radius{
+    &-05{
     border-radius: .5rem;
-  }
-  &radius-075{
-    border-radius: .75rem;
-  }
-  &radius-1{
-    border-radius: 1rem;
-  }
-  &radius-15{
-    border-radius: 1.5rem;
-  }
-  &radius-2{
-    border-radius: 2rem;
-  }
-  &radius-25{
-    border-radius: 2.5rem;
+    }
+    &-075{
+      border-radius: .75rem;
+    }
+    &-1{
+      border-radius: 1rem;
+    }
+    &-15{
+      border-radius: 1.5rem;
+    }
+    &-2{
+      border-radius: 2rem;
+    }
+    &-25{
+      border-radius: 2.5rem;
+    }
   }
 }
 
@@ -238,21 +395,163 @@ body {
   }
 }
 
-
+/* PESO DAS FONTES */
+.fs{
+  &-08{
+    font-size: .8rem!important;
+  }
+  &-100{
+    font-size: 1rem!important;
+  }
+  &-125{
+    font-size: 1.25rem!important;
+  }
+  &-150{
+    font-size: 1.5rem!important;
+  }
+  &-175{
+    font-size: 1.75rem!important;
+  }
+  &-200{
+    font-size: 2rem!important;
+  }
+  &-225{
+    font-size: 2.25rem!important;
+  }
+  &-250{
+    font-size: 2.5rem!important;
+  }
+  &-275{
+    font-size: 2.75rem!important;
+  }
+  &-300{
+    font-size: 3rem!important;
+  }
+  &-400{
+    font-size: 4rem!important;
+  }
+  &-500{
+    font-size: 5rem!important;
+  }
+}
 
 /* ALINHAMENTO */
-.center-{
-  &all{
+.center{
+  &-s{
   display: flex;
   justify-content: center;
   align-items: center;
   }
-  &v{
+  &-v{
     display: flex;
     align-items: center;
   }
-  &h{
+  &-h{
     display: flex;
     justify-content: center;
   }
+}
+
+
+/* FILL */
+
+.fill{
+  &-primary{
+    fill:$primary!important;
+    &-light{
+      fill:$primary-light!important;
+    }
+    &-dark{
+      fill:$primary-dark!important;
+    }
+    &-transparency{
+      fill:$primary-transparency!important;
+    }
+  }
+
+  &-secondary{
+    fill:$secondary!important;
+    &-light{
+      fill:$secondary-light!important;
+    }
+    &-dark{
+      fill:$secondary-dark!important;
+    }
+    &-transparency{
+      fill:$secondary-transparency!important;
+    }
+  }
+
+  &-tertiary{
+    fill:$tertiary!important;
+    &-light{
+      fill:$tertiary-light!important;
+    }
+    &-dark{
+      fill:$tertiary-dark!important;
+    }
+    &-transparency{
+      fill:$tertiary-transparency!important;
+    }
+  }
+
+  &-accent{
+    fill:$accent!important;
+    &-light{
+      fill:$accent-light!important;
+    }
+    &-dark{
+      fill:$accent-dark!important;
+    }
+    &-transparency{
+      fill:$accent-transparency!important;
+    }
+  }
+
+  &-light{
+    fill:$light!important;
+    &-transparency{
+      fill:$light-transparency!important;
+    }
+  }
+  &-dark{
+    fill:$dark!important;
+    &-transparency{
+      fill:$dark-transparency!important;
+    }
+  }
+  &-branco{
+    fill:$branco!important;
+    &-transparency{
+      fill:$branco-transparency!important;
+    }
+  }
+}
+
+/* WIDTH */
+.w-{
+  
+  &fit-content{
+    width: fit-content;
+  }
+}
+
+/* HEIGTH */
+.h-{
+  
+  &100{
+    height: 100%;
+  }
+  &100-v{
+    height: 100vh;
+  }
+
+
+  &fit-content{
+    width: fit-content;
+  }
+}
+
+.nowrap{
+  white-space: nowrap;
 }
