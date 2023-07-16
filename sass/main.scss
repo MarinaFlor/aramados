@@ -1,0 +1,237 @@
+
+:root{
+
+  --primary-light:#f98b46;
+  --primary:#F47D35;
+  --primary-dark:#d86721;
+
+  --primary-transparency:#F47D3580;
+
+  --secondary-light:#808080;
+  --secondary:#404040;
+  --secondary-dark:#2e2e2e;
+
+  --secondary-transparency:#2e2e2e80;
+
+  --accent:#FFAA29;
+  
+  --light:#D2D2D2;
+  --dark:#161616;
+
+  --branco:#fff;
+  --branco-transparency:#ffffff80;
+
+
+}
+  $primary-light:var(--primary-light);
+  $primary:var(--primary);
+  $primary-dark:var(--primary-dark);
+
+  $primary-transparency:var(--primary-transparency);
+
+  $secondary-light:var(--secondary-light);
+  $secondary:var(--secondary);
+  $secondary-dark:var(--secondary-dark);
+
+  $secondary-transparency:var(--secondary-transparency);
+
+  $accent:var(--accent);
+  
+  $light:var(--light);
+  $dark:var(--dark);
+ 
+  $branco:var(--branco);
+  $branco-transparency:var(--branco-transparency);
+  
+
+
+/* 
+--------------------------------
+GERAIS
+--------------------------------
+*/
+
+*{
+  transition: all .3s ease-in-out;
+}
+
+html{
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+
+}
+
+// FONTES
+.orbitron{
+  font-family: 'Orbitron', sans-serif!important;
+}
+
+/* COR DAS FONTES */
+.c-{
+  
+  &primary{
+    color:$primary!important;
+  }
+  &secondary{
+    color:$secondary!important;
+  }
+  &accent{
+    color:$accent!important;
+  }
+  &light{
+    color:$light!important;
+  }
+  &dark{
+    color:$dark!important;
+  }
+  &branco{
+    color:$branco!important;
+  }
+  
+}
+
+/* COR DOS FUNDOS */
+.b-{
+
+  &primary{
+    background-color:$primary!important;
+  }
+  &secondary{
+    background-color:$secondary!important;
+  }
+  &accent{
+    background-color:$accent!important;
+  }
+  &light{
+    background-color:$light!important;
+  }
+  &dark{
+    background-color:$dark!important;
+  }
+  &branco{
+    background-color:$branco!important;
+  }
+  
+}
+
+/* COR DA BORDA */
+/* PESO DA BORDA */
+.border-{
+  &primary{
+    border-color:$primary!important;
+  }
+  &secondary{
+    border-color:$secondary!important;
+  }
+  &accent{
+    border-color:$accent!important;
+  }
+  &light{
+    border-color:$light!important;
+  }
+  &dark{
+    border-color:$dark!important;
+  }
+  &branco{
+    border-color:$branco!important;
+  }
+  
+  
+  &1{
+    border-style:solid; 
+    border-width: 1px;
+  }
+  &2{
+    border-style:solid; 
+    border-width: 2px;
+  }
+  &3{
+    border-style:solid; 
+    border-width: 3px;
+  }
+  &4{
+    border-style:solid; 
+    border-width: 4px;
+  }
+  &5{
+    border-style:solid; 
+    border-width: 5px;
+  }
+
+  &radius-05{
+    border-radius: .5rem;
+  }
+  &radius-075{
+    border-radius: .75rem;
+  }
+  &radius-1{
+    border-radius: 1rem;
+  }
+  &radius-15{
+    border-radius: 1.5rem;
+  }
+  &radius-2{
+    border-radius: 2rem;
+  }
+  &radius-25{
+    border-radius: 2.5rem;
+  }
+}
+
+/* PESO DAS FONTES */
+.fw{
+
+  &-100{
+    font-weight: 100!important;
+  }
+  &-200{
+    font-weight: 200!important;
+  }
+  &-300{
+    font-weight: 300!important;
+  }
+  &-400{
+    font-weight: 400!important;
+  }
+  &-500{
+    font-weight: 500!important;
+  }
+  &-600{
+    font-weight: 600!important;
+  }
+  &-700{
+    font-weight: 700!important;
+  }
+  &-800{
+    font-weight: 800!important;
+  }
+  &-900{
+    font-weight: 900!important;
+  }
+}
+
+
+
+/* ALINHAMENTO */
+.center-{
+  &all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  &v{
+    display: flex;
+    align-items: center;
+  }
+  &h{
+    display: flex;
+    justify-content: center;
+  }
+}
