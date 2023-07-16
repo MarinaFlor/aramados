@@ -19,67 +19,7 @@ $dark:var(--dark);
 $branco:var(--branco);
 $branco-transparency:var(--branco-transparency);
 
-  @keyframes startline {
-    to {
-      stroke-dashoffset: 000;
-    }
-  }
-  @keyframes startfill {
-    to {
-      fill-opacity: 1;
-    }
-  }
-  @keyframes seta {
-    to {
-      fill-opacity: 1;
-      transform: translate(0px, 0px);
-    }
-  }
 
-  @keyframes animateGlow {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 200% 50%;
-    }
-  }
-
-  @keyframes animateElement {
-    0% {
-      transform: rotate(0deg) scale(1);
-    }
-    10% {
-        transform: rotate(8deg) scale(1.05);
-    }
-    20% {
-        transform: rotate(16deg) scale(1.1);
-    }
-    30% {
-        transform: rotate(24deg) scale(1.1);
-    }
-    40% {
-        transform: rotate(16deg) scale(1.15);
-    }
-    50% {
-        transform: rotate(24deg) scale(1.2);
-    }
-    60% {
-        transform: rotate(32deg) scale(1.15);
-    }
-    70% {
-        transform: rotate(24deg) scale(1);
-    }
-    80% {
-        transform: rotate(16deg) scale(1.1);
-    }
-    90% {
-        transform: rotate(8deg) scale(1.1);
-    }
-    100% {
-        transform: rotate(0deg) scale(1);
-    }
-  }
 
 
 /*
@@ -120,21 +60,14 @@ GERAIS
 */
 
 body{
-  background: $secondary;
-  background-image:
-      radial-gradient(at 100% 0%, hsla(41,0%,25%,1) 0px, transparent 50%),
-      radial-gradient(at 60% 3%, hsla(0,0%,25%,1) 0px, transparent 50%),
-      radial-gradient(at 83% 38%, hsla(0,0%,25%,1) 0px, transparent 50%),
-      radial-gradient(at 38% 18%, hsla(0,0%,25%,1) 0px, transparent 50%),
-      radial-gradient(at 10% 56%, hsla(0,0%,25%,1) 0px, transparent 50%),
-      radial-gradient(at 0% 100%, hsla(0,0%,25%,1) 0px, transparent 50%),
-      radial-gradient(at 71% 98%, hsla(0,0%,25%,1) 0px, transparent 50%),
-      radial-gradient(at 33% 75%, hsla(0,0%,25%,1) 0px, transparent 50%),
-      radial-gradient(at 100% 100%, hsla(34,83%,50%,1) 0px, transparent 50%),
-      radial-gradient(at 0% 0%, hsla(21,77%,50%,1) 0px, transparent 50%),
-      url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.5' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  position: relative;
+  background: $primary-light;
+  color: $primary;
+  min-height: 100vh;
+  background-image: url(../images/bg-aramados.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-  color: $branco;
 }
 
 /* BOTÕES */
@@ -363,89 +296,11 @@ body{
     }
   }
 
-  &glow {
-    padding: 16px 24px;
-    position: relative;
-    border-radius: 8px;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.01);
-  
-    &:hover{
-      color:$branco!important;
-      &::after {
-        transform: translateY(-5px);
-      }
-    }
-    &::after {
-      position: absolute;
-      content: "";
-      top: 15px;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      height: 100%;
-      width: 100%;
-      transform: scale(0.9) translateZ(0);
-      filter: blur(15px);
-      background: linear-gradient(
-        to left,
-        $primary,
-        $accent,
-        $primary-dark,
-        $accent,
-        $primary-light,
-        $accent
-      );
-      background-size: 200% 200%;
-      animation: animateGlow 2s linear infinite;
-    }
-  }
+
 
 }
 
 
-.section-brake{
-
-  hr{
-    margin: 0;
-    margin-bottom: -16px;
-    z-index: -1;
-    position: relative;
-    border-top: $secondary-light 1px solid;
-    border-bottom: $dark 1px solid;
-  }
-  .seta-down{
-    background: $accent;
-    border-radius: 100px;
-    height: 32px;
-    width: 32px;
-    padding: .25rem;
-    margin: auto;
-    #down{
-      width: 100%;
-      fill: $secondary;
-    }
-  }
-}
-
-.bg-shadow{
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(10px);
-  background-color: #404040AA;
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
-  opacity: 0;
-  transition: opacity 0.5s;
-
-  &.dark{
-    background-color: #2e2e2eAA;
-  }
-  
-}
 
 .navbar{
   .nav-text{
@@ -457,84 +312,15 @@ body{
 
 }
 
-#home{
-  min-height:100vh;
-  //background: radial-gradient(circle, $secondary-dark 0%, #2e2e2e00 100%);
-  background: linear-gradient(90deg, #2e2e2e 20%, #2e2e2e00 100%);
-  overflow: hidden;
-  position: relative;
-  &::after, &::before{
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: '';
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
+#contato{
+  .logo{
+    max-width: 300px;
   }
-  &::before{
-    filter: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.5' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    //background: linear-gradient(90deg, #2e2e2ebb 0%, #2e2e2e00 60%);
-    
-    background-color: $secondary-dark;
-    z-index: -1;
-  }
-  &::after{
-    background-image: url(../images/icon.svg); 
-    background-size: 100px;
-    background-position: bottom;
-    background-attachment: fixed;
-    
-    opacity: .3;
-  }
-
-  svg{
-    transition: all 5s ease-in-out;
-
-    #start{
-      stroke: $branco;
-      stroke-width: .25px;
-      stroke-dasharray: 200;
-      stroke-dashoffset: 200;
-      animation: startline 1s ease-in forwards;
-      
-      path{
-        fill-opacity: 0;
-        fill: $branco;
-        animation: startfill .5s 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      }
-      
-      #seta{
-        fill: $accent;
-        fill-opacity: 0;
-        stroke: $accent;
-        transform: translate(-7px, 18px);
-        animation: seta .5s 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      }
-    }
-  }
-
-  p{
-    width: 60%;
-
-    @media (max-width:470px) {
-      width: 70%;
-    }
-    @media (max-width:405px) {
-      width: 80%;
-    }
-  }
-  
-  .bigger{
-    transform: scale(1.2);
-    filter: drop-shadow(0px 4px 6px var(--dark));
-  }
-  
 }
 
-.end{
-  position: relative;
+#end{
+  //position: relative;
+  height: 85px;
 }
 footer{
   bottom: 0;
@@ -547,7 +333,7 @@ footer{
   }
   a{
     text-decoration: none;
-    color: $light;
+    color: $primary;
     position: relative;
 
     &:hover{
@@ -582,7 +368,7 @@ footer{
     }
     svg{
       height: 30px;
-      fill: $light;
+      fill: $primary;
       filter: drop-shadow( 0 0 0.1rem $primary-transparency);
       &:hover{
         filter: drop-shadow( 0 0 0.3rem $primary-transparency);
