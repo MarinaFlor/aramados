@@ -19,13 +19,6 @@
     }
   }
   */
-[data-aos=hr-expand] {
-  width: 0%;
-}
-[data-aos=hr-expand].aos-animate {
-  width: 100%;
-}
-
 /* 
 --------------------------------
 GERAIS
@@ -231,14 +224,6 @@ body {
   box-shadow: -3px 3px 0 var(--secondary) !important;
   transition: all 0.3s ease-in-out;
 }
-.btn-aramado:hover {
-  transform: translateX(-2px) translateY(2px);
-  box-shadow: -1px 1px 0 var(--secondary) !important;
-}
-.btn-aramado:active, .btn-aramado:focus, .btn-aramado:focus-visible {
-  transform: translateX(-4px) translateY(4px);
-  box-shadow: 0px 0px 0 var(--secondary) !important;
-}
 
 .navbar .nav-text {
   z-index: 1001;
@@ -246,9 +231,16 @@ body {
 }
 
 #contato .logo {
-  min-width: 300px;
+  min-width: 500px;
   max-width: 500px;
-  width: 80%;
+  width: 500px;
+}
+@media (max-width: 992px) {
+  #contato .logo {
+    min-width: 300px;
+    max-width: 300px;
+    width: 300px;
+  }
 }
 #contato .form-control {
   background-color: var(--branco-transparency);
@@ -259,6 +251,19 @@ body {
 }
 #contato .form-check-input:checked {
   background-color: var(--accent-dark) !important;
+}
+
+#obrigado .logo {
+  min-width: 300px;
+  max-width: 300px;
+  width: 300px;
+}
+@media (max-width: 992px) {
+  #obrigado .logo {
+    min-width: 230px;
+    max-width: 230px;
+    width: 230px;
+  }
 }
 
 #marinaflor {

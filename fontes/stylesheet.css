@@ -154,9 +154,17 @@ font-display: swap;
 
 
 @font-face {
-    font-family: 'Creative';
-    src: url('Creative-Vintage.otf') format('opentype');
+    font-family: 'Creative Draft';
+    src: url('CreativeVintageDraft-SS.otf') format('opentype');
     font-weight: 500;
     font-style:normal;
-font-display: swap;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Creative Regular';
+    src: url('CreativeVintageRegular-SS.otf') format('opentype');
+    font-weight: 500;
+    font-style:normal;
+    font-display: swap;
 }

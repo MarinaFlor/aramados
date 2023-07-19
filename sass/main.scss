@@ -94,7 +94,12 @@ body {
 .ft-primary{
   font-family: 'Lufga', sans-serif!important;
 }
-
+.ft-secondary{
+  font-family: 'Creative Regular', cursive!important;
+  &.draft{
+    font-family: 'Creative Draft', cursive!important;
+  }
+}
 /* COR DAS FONTES */
 .c{
   
