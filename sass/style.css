@@ -242,6 +242,12 @@ body {
     width: 300px;
   }
 }
+#contato .title h1 {
+  max-width: 500px;
+}
+#contato .title h5 {
+  max-width: 450px;
+}
 #contato .form-control {
   background-color: var(--branco-transparency);
 }

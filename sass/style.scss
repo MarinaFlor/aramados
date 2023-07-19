@@ -336,6 +336,15 @@ body{
     }
   }
 
+  .title{
+    h1{
+      max-width: 500px;
+    }
+    h5{
+      max-width: 450px;
+    }
+  }
+
   .form-control{
     background-color: $branco-transparency;
     &:hover, &:focus, &:focus-visible{
