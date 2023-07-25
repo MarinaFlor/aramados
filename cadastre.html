@@ -122,36 +122,40 @@
           </h5>
         </div>
         <div class="col-xl-7 col-md-6 col-11">
-          <form action="https://api.sheetmonkey.io/form/ppo1UHi2om5HpT17ZVFLqN" method="post">
+          <!-- Formulário -->
+          <form action="https://paginas.rocks/capture" method="post" >
+            <input id="id" name="id" type="hidden" value="701587" />
+            <input id="mid" name="mid" type="hidden" value="701587" />
+            <input id="pid" name="pid" type="hidden" value="21557348" />
+            <input id="list_id" name="list_id" type="hidden" value="701587" />
+            <input id="provider" name="provider" type="hidden" value="leadlovers" />
+            
             <div class="mb-3">
-              <input type="hidden" name="Data" value="x-sheetmonkey-current-date-time" />
-              
-              <label for="InputNome" class="form-label">
-                Nome
-              </label>
-              <input type="name" class="form-control btn-aramado" name="Nome" id="InputNome" required>
-            </div>
-            <div class="mb-3">
-              <label for="InputEmail" class="form-label">
-                E-mail
-              </label>
-              <input type="email" class="form-control btn-aramado" name="Email" id="InputEmail" required>
+              <label for="email">E-mail</label>
+              <input required class="form-control btn-aramado" id="email" name="email" placeholder="Informe o seu email" type="text" />
             </div>
             <div class="mb-3">
-              <label for="InputCelular" class="form-label">
-                Telefone
-              </label>
-              <input type="" class="form-control btn-aramado" name="Celular" id="InputCelular" required>
+              <label for="name">Nome</label>
+              <input class="form-control btn-aramado" id="name" name="name" placeholder="Informe o seu nome" type="text"  />
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input btn-aramado" id="Check" required>
-              <label class="form-check-label" for="Check">
-                Aceito compartilhar meus dados
-              </label>
+            <div class="mb-3">
+              <label for="phone">Telefone</label>
+              <input id="usePhoneMask" type="hidden" />
+              <input class="form-control btn-aramado" id="phone" name="phone" placeholder="Informe o telefone" type="text" />
             </div>
-            <button type="submit" class="btn btn-primary fw-700 btn-aramado btn-click w-100">
-              Cadastre-se
-            </button>
+            
+            <div class="checkbox-list" data-required="true">
+              <div class="checkbox">
+                <label class="fixed">
+                <input required class="form-check-input btn-aramado" id="LGPDValidation" name="LGPDValidation" type="checkbox" value="1">&nbsp;Sim, desejo receber e-mails. <br>
+                <span class="small">O consentimento pode ser retirado a qualquer momento clicando no link de cancelamento de inscrição presente em todas as comunicações por e-mail.</span>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn btn-primary fw-700 btn-aramado btn-click w-100" style="padding: 10px 40px; margin:15px 0 5px;  " type="submit">Cadastre-se</button>
+            <input type="hidden" id="source" name="source" value="" />
+            <img src="https://llimages.com/redirect/redirect.aspx?A=V&p=21557348&m=701587" style="display: none;" />
           </form>
         </div>
       </div>
@@ -257,7 +261,7 @@
     var rellax = new Rellax('.rellax');
   </script>
 -->
-
+<script src="https://paginas.rocks/scripts/capture/form/async-form-capture.js" async defer></script>
 
 
 </body>
