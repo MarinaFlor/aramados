@@ -21,6 +21,7 @@
   --dark-transparency:#0e0e0e80;
   --branco:#fff;
   --branco-transparency:#ffffff80;
+  --cinza:#cad0d0;
 }
 
 /* 
@@ -122,6 +123,9 @@ body {
 .c-branco-transparency {
   color: var(--branco-transparency) !important;
 }
+.c-cinza {
+  color: var(--cinza) !important;
+}
 
 /* COR DOS FUNDOS */
 .bg-primary {
@@ -189,6 +193,9 @@ body {
 }
 .bg-branco-transparency {
   background-color: var(--branco-transparency) !important;
+}
+.bg-cinza {
+  background-color: var(--cinza) !important;
 }
 
 /* COR DA BORDA */

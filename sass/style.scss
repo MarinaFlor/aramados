@@ -30,7 +30,7 @@ $dark-transparency:var(--dark-transparency);
 $branco:var(--branco);
 $branco-transparency:var(--branco-transparency);
 
-
+$cinza:var(--cinza);
 
 
 /*
@@ -127,8 +127,7 @@ body{
     }
 
     &:focus{
-      box-shadow: 0 0 5px 0 $accent!important;
-    
+      box-shadow: 0 0 0 0rem $accent;
     }
   }
   &secondary{
@@ -178,23 +177,23 @@ body{
     }
 
     &:focus{
-      box-shadow: 0 0 0 0.2rem $accent!important;
+      box-shadow: 0 0 0 0rem $accent;
     
     }
   }
   &accent{
     border-color: $accent!important;
     background-color: $accent!important;
-    color: $branco!important;
+    color: $secondary!important;
     transition: .5s all ease-in-out;
 
     &:hover{
-      background-color: $primary!important;
+      background-color: $accent-light!important;
     }
 
     &:active{
-      background-color: $primary-light!important;
-      border-color: $primary-light!important;
+      background-color: $accent-light!important;
+      border-color: $accent-light!important;
       color:$branco;
     }
 
@@ -203,7 +202,7 @@ body{
     }
 
     &:focus{
-      box-shadow: 0 0 0 0.1rem $accent!important;
+      box-shadow: 0 0 0 0rem $accent;
     }
   }
   &outline-accent{
@@ -229,7 +228,7 @@ body{
     }
 
     &:focus{
-      box-shadow: 0 0 0 0.2rem $accent!important;
+      box-shadow: 0 0 0 0rem $accent;
     
     }
   }
@@ -254,7 +253,7 @@ body{
     }
 
     &:focus{
-      box-shadow: 0 0 0 0.1rem $branco!important;
+      box-shadow: 0 0 0 0rem $accent;
     }
   }
   &outline-branco{
@@ -280,8 +279,7 @@ body{
     }
 
     &:focus{
-      box-shadow: 0 0 0 0.2rem $branco!important;
-    
+      box-shadow: 0 0 0 0rem $accent;
     }
   }
 
@@ -322,6 +320,79 @@ body{
 
 
 }
+
+//PÁGINA DE VENDAS
+#vendas{
+  #home{
+    overflow: hidden;
+    .text{
+      position: relative;
+
+      .title{
+        @media (max-width:767px) {
+          max-width: 340px;
+        }
+        @media (max-width:577px) {
+          max-width: 270px;
+        }
+
+      }
+    }
+    .logo{
+      min-width: 300px;
+      max-width: 300px;
+      width: 300px;
+    }
+
+    .imagem{
+      img{
+        @media (max-width:767px) {
+          max-height: 70vh;
+          margin-right: -4rem;
+          margin-top: -23rem;
+        }
+        @media (max-width:465px) {
+          //max-height: 60vh;
+          margin-top: -14rem;
+        }
+        @media (max-width:400px) {
+          margin-right: -2rem;
+          margin-top: -10rem;
+        }
+        @media (max-width:345px) {
+          margin-top: -8rem;
+        }
+      }
+    }
+  }
+
+  #video{
+    .video{
+      max-height: 90vh;
+      width: 100%;
+      aspect-ratio: 16/9;
+      @media (min-width:1400px) {
+        width: auto;
+      }
+      iframe{
+        width: 100%;
+        height: 100%;
+
+        &.btn-aramado{
+          box-shadow: -6px 6px 0 $secondary!important;
+        }
+      }
+    }
+  }
+
+  #sou{
+    .sou{
+      max-height: 500px;
+      margin-bottom: -.5rem;
+    }
+  }
+}
+
 
 // PÁGINA DE CONTATO
 #contato{
@@ -370,6 +441,9 @@ body{
     }
   }
 }
+
+
+
 
 #marinaflor{
   height: 60px;

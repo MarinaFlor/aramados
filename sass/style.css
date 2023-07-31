@@ -79,7 +79,7 @@ body {
   outline: var(--primary) auto 1px;
 }
 .btn-outline-primary:focus {
-  box-shadow: 0 0 5px 0 var(--accent) !important;
+  box-shadow: 0 0 0 0rem var(--accent);
 }
 .btn-secondary {
   border-color: var(--secondary);
@@ -121,27 +121,27 @@ body {
   outline: var(--secondary) auto 1px;
 }
 .btn-outline-secondary:focus {
-  box-shadow: 0 0 0 0.2rem var(--accent) !important;
+  box-shadow: 0 0 0 0rem var(--accent);
 }
 .btn-accent {
   border-color: var(--accent) !important;
   background-color: var(--accent) !important;
-  color: var(--branco) !important;
+  color: var(--secondary) !important;
   transition: 0.5s all ease-in-out;
 }
 .btn-accent:hover {
-  background-color: var(--primary) !important;
+  background-color: var(--accent-light) !important;
 }
 .btn-accent:active {
-  background-color: var(--primary-light) !important;
-  border-color: var(--primary-light) !important;
+  background-color: var(--accent-light) !important;
+  border-color: var(--accent-light) !important;
   color: var(--branco);
 }
 .btn-accent:focus-visible {
   outline: var(--accent) auto 1px !important;
 }
 .btn-accent:focus {
-  box-shadow: 0 0 0 0.1rem var(--accent) !important;
+  box-shadow: 0 0 0 0rem var(--accent);
 }
 .btn-outline-accent {
   background: transparent;
@@ -163,7 +163,7 @@ body {
   outline: var(--accent) auto 1px;
 }
 .btn-outline-accent:focus {
-  box-shadow: 0 0 0 0.2rem var(--accent) !important;
+  box-shadow: 0 0 0 0rem var(--accent);
 }
 .btn-branco {
   border-color: var(--branco) !important;
@@ -183,7 +183,7 @@ body {
   outline: var(--branco) auto 1px !important;
 }
 .btn-branco:focus {
-  box-shadow: 0 0 0 0.1rem var(--branco) !important;
+  box-shadow: 0 0 0 0rem var(--accent);
 }
 .btn-outline-branco {
   background: transparent;
@@ -205,7 +205,7 @@ body {
   outline: var(--branco) auto 1px;
 }
 .btn-outline-branco:focus {
-  box-shadow: 0 0 0 0.2rem var(--branco) !important;
+  box-shadow: 0 0 0 0rem var(--accent);
 }
 .btn-click {
   box-shadow: -3px 3px 0 var(--secondary) !important;
@@ -228,6 +228,72 @@ body {
 .navbar .nav-text {
   z-index: 1001;
   position: relative;
+}
+
+#vendas #home {
+  overflow: hidden;
+}
+#vendas #home .text {
+  position: relative;
+}
+@media (max-width: 767px) {
+  #vendas #home .text .title {
+    max-width: 340px;
+  }
+}
+@media (max-width: 577px) {
+  #vendas #home .text .title {
+    max-width: 270px;
+  }
+}
+#vendas #home .logo {
+  min-width: 300px;
+  max-width: 300px;
+  width: 300px;
+}
+@media (max-width: 767px) {
+  #vendas #home .imagem img {
+    max-height: 70vh;
+    margin-right: -4rem;
+    margin-top: -23rem;
+  }
+}
+@media (max-width: 465px) {
+  #vendas #home .imagem img {
+    margin-top: -14rem;
+  }
+}
+@media (max-width: 400px) {
+  #vendas #home .imagem img {
+    margin-right: -2rem;
+    margin-top: -10rem;
+  }
+}
+@media (max-width: 345px) {
+  #vendas #home .imagem img {
+    margin-top: -8rem;
+  }
+}
+#vendas #video .video {
+  max-height: 90vh;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+@media (min-width: 1400px) {
+  #vendas #video .video {
+    width: auto;
+  }
+}
+#vendas #video .video iframe {
+  width: 100%;
+  height: 100%;
+}
+#vendas #video .video iframe.btn-aramado {
+  box-shadow: -6px 6px 0 var(--secondary) !important;
+}
+#vendas #sou .sou {
+  max-height: 500px;
+  margin-bottom: -0.5rem;
 }
 
 #contato .logo {

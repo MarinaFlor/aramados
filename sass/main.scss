@@ -32,6 +32,8 @@
   --branco:#fff;
   --branco-transparency:#ffffff80;
 
+  --cinza:#cad0d0;
+
 
 }
   $primary-light:var(--primary-light);
@@ -65,6 +67,7 @@
   $branco:var(--branco);
   $branco-transparency:var(--branco-transparency);
   
+  $cinza:var(--cinza);
 
 
 /* 
@@ -173,6 +176,10 @@ body {
       color:$branco-transparency!important;
     }
   }
+
+  &-cinza{
+    color:$cinza!important;
+  }
   
 }
 
@@ -248,6 +255,10 @@ body {
     &-transparency{
       background-color:$branco-transparency!important;
     }
+  }
+
+  &-cinza{
+    background-color:$cinza!important;
   }
   
 }
