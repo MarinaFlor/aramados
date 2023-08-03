@@ -310,24 +310,6 @@ body{
 
 }
 
-@keyframes neon {
-  0% {
-    box-shadow:0 0 10px var(--accent);
-  }
-  25% {
-    box-shadow:0 0 50px var(--accent);
-  }
-  50% {
-    box-shadow:0 0 10px var(--tertiary);
-  }
-  75% {
-    box-shadow:0 0 50px var(--tertiary);
-  }
-  100% {
-    box-shadow:0 0 10px var(--accent);
-  }
-}
-
 
 .navbar{
   .nav-text{
@@ -341,11 +323,7 @@ body{
 
 //PÁGINA DE VENDAS
 #vendas{
-  .neon{
-    animation: neon 2s ease-out infinite;
-    width: fit-content;
-    border-radius: .25rem;
-  }
+
   .btn-accent.btn-click{
     font-size: 1.1rem;
     font-weight: 500;
@@ -506,11 +484,18 @@ body{
       
     }
     .bonus{
+      .accordion-button.collapsed{
+        background: $tertiary;
+      }
       .card{
         background: $tertiary;
       }
     }
     .cursos{
+      .accordion-button.collapsed{
+        background: $accent;
+
+      }
       .card{
         background: $accent;
       }

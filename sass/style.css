@@ -223,34 +223,11 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-@keyframes neon {
-  0% {
-    box-shadow: 0 0 10px var(--accent);
-  }
-  25% {
-    box-shadow: 0 0 50px var(--accent);
-  }
-  50% {
-    box-shadow: 0 0 10px var(--tertiary);
-  }
-  75% {
-    box-shadow: 0 0 50px var(--tertiary);
-  }
-  100% {
-    box-shadow: 0 0 10px var(--accent);
-  }
-}
 .navbar .nav-text {
   z-index: 1001;
   position: relative;
 }
 
-#vendas .neon {
-  animation: neon 2s ease-out infinite;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 0.25rem;
-}
 #vendas .btn-accent.btn-click {
   font-size: 1.1rem;
   font-weight: 500;
@@ -390,8 +367,14 @@ body {
   font-family: "Creative Regular", cursive !important;
   color: var(--primary-dark);
 }
+#vendas #modulos .bonus .accordion-button.collapsed {
+  background: var(--tertiary);
+}
 #vendas #modulos .bonus .card {
   background: var(--tertiary);
+}
+#vendas #modulos .cursos .accordion-button.collapsed {
+  background: var(--accent);
 }
 #vendas #modulos .cursos .card {
   background: var(--accent);
