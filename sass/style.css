@@ -307,6 +307,66 @@ body {
   max-height: 500px;
   margin-bottom: -0.5rem;
 }
+#vendas #fotos {
+  /* display 3 */
+}
+#vendas #fotos .owl-carousel {
+  position: relative;
+}
+#vendas #fotos .owl-nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 43%;
+}
+#vendas #fotos .owl-prev {
+  position: absolute;
+  left: -5%;
+  filter: invert(1) grayscale(100);
+}
+#vendas #fotos .owl-next {
+  position: absolute;
+  right: -5%;
+  filter: invert(1) grayscale(100);
+}
+#vendas #fotos .owl-item {
+  padding: 0.5rem;
+}
+#vendas #fotos .owl-stage-outer {
+  padding: 0.5rem 0.2rem;
+}
+#vendas #fotos .btn-aramado {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  #vendas #fotos .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  #vendas #fotos .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+#vendas #fotos .carousel-inner .carousel-item.active,
+#vendas #fotos .carousel-inner .carousel-item-next,
+#vendas #fotos .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+@media (min-width: 768px) {
+  #vendas #fotos .carousel-inner .carousel-item-right.active,
+  #vendas #fotos .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+  #vendas #fotos .carousel-inner .carousel-item-left.active,
+  #vendas #fotos .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+#vendas #fotos .carousel-inner .carousel-item-right,
+#vendas #fotos .carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
 #vendas #depoimentos .carousel-control-prev {
   left: -10%;
 }
@@ -343,7 +403,7 @@ body {
   margin-bottom: 1rem;
 }
 #vendas #modulos .accordion-header {
-  width: 300px;
+  max-width: 300px;
   margin: 0 auto;
 }
 #vendas #modulos .accordion-button {
