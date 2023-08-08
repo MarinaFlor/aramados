@@ -411,10 +411,17 @@ body{
   }
 
   #fotos{
+    .item{
+      margin: 1rem;
+      width: fit-content;
+      max-width: 40%;
+      
+    }
     .owl{
 
       &-carousel{
         position: relative;
+        display: flex;
       }
       &-nav{
         position: absolute;
@@ -432,9 +439,6 @@ body{
         position: absolute;
         right: -5%;
         filter: invert(1) grayscale(100);
-      }
-      &-item{
-        padding: 0.5rem;
       }
       &-stage-outer{
         padding: 0.5rem 0.2rem;

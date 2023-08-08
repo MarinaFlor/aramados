@@ -310,8 +310,15 @@ body {
 #vendas #fotos {
   /* display 3 */
 }
+#vendas #fotos .item {
+  margin: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 40%;
+}
 #vendas #fotos .owl-carousel {
   position: relative;
+  display: flex;
 }
 #vendas #fotos .owl-nav {
   position: absolute;
@@ -329,9 +336,6 @@ body {
   position: absolute;
   right: -5%;
   filter: invert(1) grayscale(100);
-}
-#vendas #fotos .owl-item {
-  padding: 0.5rem;
 }
 #vendas #fotos .owl-stage-outer {
   padding: 0.5rem 0.2rem;
