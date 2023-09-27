@@ -124,7 +124,7 @@
           </h5>
         </div>
         <div class="col-xl-7 col-md-6 col-11">
-          <!-- Formulário -->
+          <!-- Formulário Leadlovers
           <form action="https://paginas.rocks/capture" method="post" >
             <input id="id" name="id" type="hidden" value="701587" />
             <input id="mid" name="mid" type="hidden" value="701587" />
@@ -147,6 +147,39 @@
             </div>
             
             <div class="checkbox-list" data-required="true">
+              <div class="checkbox">
+                <label class="fixed">
+                <input required class="form-check-input" id="LGPDValidation" name="LGPDValidation" type="checkbox" value="1">&nbsp;Sim, desejo receber e-mails. <br>
+                <span class="small c-tertiary">O consentimento pode ser retirado a qualquer momento clicando no link de cancelamento de inscrição presente em todas as comunicações por e-mail.</span>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn fw-700 btn-aramado btn-click w-100" style="padding: 10px 40px; margin:15px 0 5px;  " type="submit">Cadastre-se</button>
+            <input type="hidden" id="source" name="source" value="" />
+            <img src="https://llimages.com/redirect/redirect.aspx?A=V&p=21557348&m=701587" style="display: none;" />
+          </form>
+        -->
+
+        <!-- Formulário Sheetmonkeys -->
+        <form action="https://api.sheetmonkey.io/form/ppo1UHi2om5HpT17ZVFLqN" method="post">
+            <input type="hidden" name="Data" value="x-sheetmonkey-current-date-time" />
+            
+            <div class="mb-3">
+              <label class="c-tertiary" for="email">E-mail</label>
+              <input required class="form-control btn-aramado" id="email" name="email" placeholder="Informe o seu email" type="text" />
+            </div>
+            <div class="mb-3">
+              <label class="c-tertiary" for="name">Nome</label>
+              <input class="form-control btn-aramado" required id="name" name="name" placeholder="Informe o seu nome" type="text"  />
+            </div>
+            <div class="mb-3">
+              <label class="c-tertiary" for="phone">Telefone</label>
+              <input id="usePhoneMask" type="hidden" />
+              <input class="form-control btn-aramado" required id="phone" name="phone" placeholder="Informe o telefone" type="text" />
+            </div>
+            
+            <div class="checkbox-list" required data-required="true">
               <div class="checkbox">
                 <label class="fixed">
                 <input required class="form-check-input" id="LGPDValidation" name="LGPDValidation" type="checkbox" value="1">&nbsp;Sim, desejo receber e-mails. <br>
