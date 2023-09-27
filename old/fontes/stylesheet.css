@@ -1,4 +1,3 @@
-/*
 @font-face {
     font-family: 'Lufga';
     src: url('Lufga-ThinItalic.otf') format('opentype');
@@ -151,15 +150,21 @@ font-display: swap;
     font-style: italic;
 font-display: swap;
 }
-*/
+
 
 
 @font-face {
-    font-family: 'Silk Serif';
-    src: url('silk-serif/Silk-Serif-SemiBold.otf') format('opentype');
+    font-family: 'Creative Draft';
+    src: url('CreativeVintageDraft-SS.otf') format('opentype');
     font-weight: 500;
     font-style:normal;
     font-display: swap;
 }
 
-
+@font-face {
+    font-family: 'Creative Regular';
+    src: url('CreativeVintageRegular-SS.otf') format('opentype');
+    font-weight: 500;
+    font-style:normal;
+    font-display: swap;
+}

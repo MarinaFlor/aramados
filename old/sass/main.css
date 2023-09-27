@@ -1,22 +1,22 @@
 :root {
-  --primary-light:#f29ea2;
-  --primary:#f57e7f;
-  --primary-dark:#da6466;
-  --primary-transparency:#f57e7f80;
-  --secondary-light:#f8f8ec;
-  --secondary:#ededd3;
-  --secondary-dark:#d3d3ba;
-  --secondary-transparency:#ededd380;
-  --tertiary-light:#333333;
-  --tertiary:#232323;
-  --tertiary-dark:#1a1a1a;
-  --tertiary-transparency:#23232380;
-  --accent-light:#fafafa;
-  --accent:#FFF;
-  --accent-dark:#f9f9f9;
-  --accent-transparency:#ffffff80;
-  --light:#fdc1c2;
-  --light-transparency:#fdc1c280;
+  --primary-light:#ffb9eb;
+  --primary:#ddacc2;
+  --primary-dark:#af478e;
+  --primary-transparency:#af478e80;
+  --secondary-light:#333333;
+  --secondary:#232323;
+  --secondary-dark:#1a1a1a;
+  --secondary-transparency:#23232380;
+  --tertiary-light:#f4d4bf;
+  --tertiary:#fbb03b;
+  --tertiary-dark:#ed9564;
+  --tertiary-transparency:#fbb03b80;
+  --accent-light:#ddffbd;
+  --accent:#bbff80;
+  --accent-dark:#80a85a;
+  --accent-transparency:#bbff8080;
+  --light:#f9eaf9;
+  --light-transparency:#f9eaf980;
   --dark:#0e0e0e;
   --dark-transparency:#0e0e0e80;
   --branco:#fff;
@@ -42,15 +42,18 @@ html {
 body {
   width: 100vw;
   overflow-x: hidden;
-  font-family: "Sora", sans-serif;
+  font-family: "Lufga", sans-serif;
 }
 
 .ft-primary {
-  font-family: "Sora", sans-serif !important;
+  font-family: "Lufga", sans-serif !important;
 }
 
 .ft-secondary {
-  font-family: "Silk Serif", cursive !important;
+  font-family: "Creative Regular", cursive !important;
+}
+.ft-secondary.draft {
+  font-family: "Creative Draft", cursive !important;
 }
 
 /* COR DAS FONTES */

@@ -1,32 +1,32 @@
 
 :root{
 
-  --primary-light:#f29ea2;
-  --primary:#f57e7f;
-  --primary-dark:#da6466;
+  --primary-light:#ffb9eb;
+  --primary:#ddacc2;
+  --primary-dark:#af478e;
 
-  --primary-transparency:#f57e7f80;
+  --primary-transparency:#af478e80;
 
-  --secondary-light:#f8f8ec;
-  --secondary:#ededd3;
-  --secondary-dark:#d3d3ba;
+  --secondary-light:#333333;
+  --secondary:#232323;
+  --secondary-dark:#1a1a1a;
 
-  --secondary-transparency:#ededd380;
+  --secondary-transparency:#23232380;
 
-  --tertiary-light:#333333;
-  --tertiary:#232323;
-  --tertiary-dark:#1a1a1a;
+  --tertiary-light:#f4d4bf;
+  --tertiary:#fbb03b;
+  --tertiary-dark:#ed9564;
 
-  --tertiary-transparency:#23232380;
+  --tertiary-transparency:#fbb03b80;
 
-  --accent-light:#fafafa;
-  --accent:#FFF;
-  --accent-dark:#f9f9f9;
+  --accent-light:#ddffbd;
+  --accent:#bbff80;
+  --accent-dark:#80a85a;
 
-  --accent-transparency:#ffffff80;
+  --accent-transparency:#bbff8080;
   
-  --light:#fdc1c2;
-  --light-transparency:#fdc1c280;
+  --light:#f9eaf9;
+  --light-transparency:#f9eaf980;
   --dark:#0e0e0e;
   --dark-transparency:#0e0e0e80;
   --branco:#fff;
@@ -39,7 +39,7 @@
   $primary-light:var(--primary-light);
   $primary:var(--primary);
   $primary-dark:var(--primary-dark);
-  
+
   $primary-transparency:var(--primary-transparency);
 
   $secondary-light:var(--secondary-light);
@@ -89,16 +89,19 @@ html{
 body {
   width: 100vw;
   overflow-x: hidden;
-  font-family: 'Sora', sans-serif;
+  font-family: 'Lufga', sans-serif;
 
 }
 
 // FONTES
 .ft-primary{
-  font-family: 'Sora', sans-serif!important;
+  font-family: 'Lufga', sans-serif!important;
 }
 .ft-secondary{
-  font-family: 'Silk Serif', cursive!important;
+  font-family: 'Creative Regular', cursive!important;
+  &.draft{
+    font-family: 'Creative Draft', cursive!important;
+  }
 }
 /* COR DAS FONTES */
 .c{

@@ -29,7 +29,7 @@ body {
   background: var(--primary);
   color: var(--primary-dark);
   min-height: 100vh;
-  background-image: url(../images/bg.jpg);
+  background-image: url(../images/bg-aramados.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -207,55 +207,20 @@ body {
 .btn-outline-branco:focus {
   box-shadow: 0 0 0 0rem var(--accent);
 }
-.btn--click {
+.btn-click {
+  box-shadow: -3px 3px 0 var(--secondary) !important;
   transition: all 0.3s ease-in-out;
 }
-.btn--click:hover {
-  transform: translateX(2px) translateY(2px) !important;
+.btn-click:hover {
+  box-shadow: -1px 1px 0 var(--secondary) !important;
 }
-.btn--click:active {
-  transform: translateX(4px) translateY(4px) !important;
-}
-.btn--click-shadow {
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2) !important;
-  transition: all 0.3s ease-in-out !important;
-}
-.btn--click-shadow:hover {
-  transform: translateX(2px) translateY(2px) !important;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) !important;
-}
-.btn--click-shadow:active {
-  transform: translateX(4px) translateY(4px) !important;
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2) !important;
-}
-.btn--click-img {
-  box-shadow: none !important;
-  transition: all 0.3s ease-in-out !important;
-  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.2)) !important;
-}
-.btn--click-img:hover {
-  transform: translateX(2px) translateY(2px) !important;
-  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2)) !important;
-}
-.btn--click-img:active {
-  transform: translateX(4px) translateY(4px) !important;
-  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.2)) !important;
+.btn-click:active {
+  box-shadow: 0px 0px 0 var(--secondary) !important;
 }
 .btn-aramado {
-  background-color: transparent;
-  border: none;
-  border-radius: 0px !important;
-  color: var(--secondary) !important;
-  background-image: linear-gradient(270deg, rgba(242, 158, 162, 0.2) 0%, rgb(245, 126, 127) 50%, rgb(245, 126, 127) 200%);
-  background-size: 200%;
-  background-position: 100%;
-  transition: all 0.5s ease-in-out;
-  box-shadow: none !important;
-  outline: none !important;
-}
-.btn-aramado:hover {
-  background-position: 0%;
-  color: var(--branco);
+  border: 1px solid var(--secondary-dark) !important;
+  box-shadow: -3px 3px 0 var(--secondary) !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar .nav-text {
@@ -536,31 +501,15 @@ body {
 #contato .title h5 {
   max-width: 450px;
 }
-#contato .title h5 b {
-  background: linear-gradient(270deg, rgba(242, 158, 162, 0.5) 0%, rgb(245, 126, 127) 100%);
-  color: var(--branco);
-  padding-inline: 0.25rem;
-}
 #contato .form-control {
-  background-color: transparent;
-}
-#contato .form-control::-moz-placeholder {
-  color: var(--secondary);
-}
-#contato .form-control::placeholder {
-  color: var(--secondary);
+  background-color: var(--branco-transparency);
 }
 #contato .form-control:hover, #contato .form-control:focus, #contato .form-control:focus-visible {
+  background-color: var(--accent-transparency);
   outline: 0 !important;
 }
-#contato .form-check-input {
-  background-color: transparent;
-  border: 1px solid var(--primary);
-  outline: none !important;
-  box-shadow: none !important;
-}
 #contato .form-check-input:checked {
-  background-color: var(--primary-dark) !important;
+  background-color: var(--accent-dark) !important;
 }
 
 #obrigado .logo {
