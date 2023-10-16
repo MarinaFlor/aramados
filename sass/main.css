@@ -466,8 +466,8 @@ body {
   height: 100vh;
 }
 .h-fit-content {
-  width: -moz-fit-content;
-  width: fit-content;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 
 .nowrap {
