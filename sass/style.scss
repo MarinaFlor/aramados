@@ -367,8 +367,50 @@ body{
   b{
     font-weight: 700!important;
   }
+  @keyframes neon {
+    0% {
+      box-shadow: 0 0 40px $primary;
+    }
+    50% {
+      box-shadow: 0 0 10px $primary;
+    }
+    100% {
+      box-shadow: 0 0 40px $primary;
+    }
+
+  }
+  @keyframes neonlight {
+    0% {
+      box-shadow: 0 0 40px $secondary;
+    }
+    50% {
+      box-shadow: 0 0 10px $secondary;
+    }
+    100% {
+      box-shadow: 0 0 40px $secondary;
+    }
+
+  }
+  .neon{
+    //box-shadow: 0 0 30px $primary;
+    animation: neon 1.5s infinite;
+    width: fit-content;
+    &.light{
+      //box-shadow: 0 0 30px $secondary;
+      animation: neonlight 1.5s infinite;
+    }
+  }
   .btn-aramado{
     padding: .75rem 1.75rem;
+    background-image: linear-gradient(270deg, $secondary-transparency 0%, $primary 35%, $primary 200%);
+    color: $secondary!important;
+    text-shadow: 0 0 5px $primary-transparency;
+
+    &.light{
+      background-image: linear-gradient(270deg, $primary-transparency 0%, $secondary 35%, $secondary 200%);
+      color: $tertiary!important;
+      text-shadow: 0 0 5px $secondary-transparency;
+    }
   }
 
   #home{
@@ -638,6 +680,16 @@ body{
 
     }
 
+  }
+
+  #wpp{
+    .neon{
+      border-radius: 1000px!important;
+    }
+    .btn-aramado{
+      padding: 1.5rem!important;
+      border-radius: 1000px!important;
+    }
   }
 }
 
