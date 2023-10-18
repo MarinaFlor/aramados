@@ -493,10 +493,10 @@ body {
   height: 100%;
 }
 #vendas #cursos .card-primary {
-  border: 5px solid var(--primary);
+  border: 5px solid var(--primary-dark);
 }
 #vendas #cursos .card-primary .card-body {
-  background: var(--primary);
+  background: var(--primary-dark);
 }
 #vendas #cursos .card-primary .card-text {
   color: var(--secondary);
@@ -510,6 +510,9 @@ body {
 }
 #vendas #cursos .card-text {
   color: var(--tertiary);
+}
+#vendas #cursos .card-img-top {
+  border-radius: 0px !important;
 }
 #vendas #preco .center-info {
   padding: 1rem 0;

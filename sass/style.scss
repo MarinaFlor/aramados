@@ -626,10 +626,10 @@ body{
     height: 100%;
 
     &-primary{
-      border: 5px solid $primary;
+      border: 5px solid $primary-dark;
 
       .card-body{
-        background: $primary;
+        background: $primary-dark;
   
       }
       .card-text{
@@ -648,9 +648,11 @@ body{
     &-text{
       color: $tertiary;
     }
+    &-img-top{
+      border-radius: 0px!important;
+    }
    }
   }
-
 
   #preco{
     .center-info{
