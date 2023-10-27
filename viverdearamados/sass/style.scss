@@ -189,12 +189,13 @@ body{
 
     &:hover{
       background-color: $accent-light!important;
+      color:$primary-dark;
     }
 
     &:active{
       background-color: $accent-light!important;
       border-color: $accent-light!important;
-      color:$branco;
+      color:$primary-dark;
     }
 
     &:focus-visible{
@@ -284,8 +285,19 @@ body{
   }
 
   &click{
-    box-shadow: -3px 3px 0 $secondary!important;
     transition:all 0.3s ease-in-out;
+
+    &:hover{
+      transform: translateX(-2px) translateY(2px);
+    }
+    
+    &:active{
+      transform: translateX(-4px) translateY(4px);
+    }
+
+    &-shadow{
+      box-shadow: -3px 3px 0 $secondary!important;
+      transition:all 0.3s ease-in-out;
 
     &:hover{
       //transform: translateX(-2px) translateY(2px);
@@ -295,6 +307,7 @@ body{
     &:active{
       //transform: translateX(-4px) translateY(4px);
       box-shadow: 0px 0px 0 $secondary!important;
+    }
     }
   }
 

@@ -304,6 +304,9 @@ body {
 .border-radius-25 {
   border-radius: 2.5rem;
 }
+.border-radius-round {
+  border-radius: 1000rem;
+}
 
 /* PESO DAS FONTES */
 .fw-100 {
