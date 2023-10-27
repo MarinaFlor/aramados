@@ -445,8 +445,9 @@ body {
 }
 #vendas #dominios .item {
   color: var(--secondary);
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  width: 100%;
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 1rem;
